@@ -1,0 +1,109 @@
+#materials-section{
+    justify-content: space-between;
+}
+
+#materials-section article {
+    position: relative;
+    width: 365px;
+    height: 225px;
+}
+
+section#materials-section article button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+#option-1{
+    background: url('assets/banners-14.jpg');
+    background-size: 100% 100%;
+}
+
+#option-2{
+    background: url('assets/banners-13.jpg');
+    background-size: 100% 100%;
+}
+
+#option-3{
+    background: url('assets/banners-12.jpg');
+    background-size: 100% 100%;
+}
+
+#container{
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+// Banner del margen izquierdo inferior
+
+#aside {
+    margin-top: 60px;
+    float: left;
+    width: 100%;
+    max-width: 22vw;
+}
+
+#aside img {
+    width: 70%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+
+// Contenedor donde esta el carrusel con los materiales de construcción en seco
+
+
+#container-dry-build{
+    vertical-align: top;
+    width: 65vw;
+    float: right;
+    height: auto;
+    flex-direction: column;
+}
+
+article#container-dry-build h2 {
+    text-align: center;
+}
+
+#title-banner{
+    width: 500px;
+    height: 40px;
+    background-color: $yellow;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dry-build-items {
+    justify-content: space-between;
+}
+
+#dry-build-items div {
+    margin-top: 20px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 200px;
+    height: auto;
+    padding-left: 25px;
+}
+
+#dry-build-items div img {
+    width: 100%;
+    max-width: 185px;
+    height: auto;
+}
+
+#dry-build-items div p {
+    width: 100%;
+    max-width: 185px;
+    height: auto;
+    text-align: center;
+}
+
+

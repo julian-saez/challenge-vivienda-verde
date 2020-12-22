@@ -1,0 +1,58 @@
+.wrapper{
+    margin: 0 85px;
+    position: relative;
+    height: 110vh;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.btn-more{
+    padding: 10px 15px;
+    background-color: $btn;
+    border: 0;
+    font-family: $font;
+    font-weight: 800;
+    font-size: 0.7rem;
+    color: white;
+}
+
+.bold-word{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#bold-word-specific{
+    font-weight: 600;
+    color: black;
+}
+
+body{
+    h1{
+        font-family: $font;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 1.3rem;
+    }
+
+    h2{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    h2{
+        font-family: $font;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    p{
+        font-family: $font;
+        font-size: 0.9rem;
+    }
+}
+
+
+
