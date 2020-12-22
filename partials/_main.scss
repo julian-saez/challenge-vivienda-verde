@@ -1,3 +1,5 @@
+// Primera sección donde se encuentra tipos de materiales disponibles
+
 #materials-section{
     justify-content: space-between;
 }
@@ -57,7 +59,6 @@ section#materials-section article button{
 
 // Contenedor donde esta el carrusel con los materiales de construcción en seco
 
-
 #container-dry-build{
     vertical-align: top;
     width: 65vw;
@@ -66,10 +67,12 @@ section#materials-section article button{
     flex-direction: column;
 }
 
+// Titulo de la sección
 article#container-dry-build h2 {
     text-align: center;
 }
 
+// Titulo con fondo resaltado en amarillo 
 #title-banner{
     width: 500px;
     height: 40px;
@@ -79,6 +82,8 @@ article#container-dry-build h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+// Contenedor donde estan los materiales
 
 #dry-build-items {
     justify-content: space-between;
