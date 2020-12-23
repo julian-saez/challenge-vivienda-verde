@@ -1,56 +1,62 @@
-.wrapper{
-    margin: 0 85px;
-    position: relative;
-    height: 110vh;
-}
-
-.flex-container{
-    display: flex;
-}
-
-.btn-more{
-    padding: 10px 15px;
-    background-color: $btn;
-    border: 0;
-    font-family: $font;
-    font-weight: 800;
-    font-size: 0.7rem;
-    color: white;
-}
-
-.bold-word{
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-#bold-word-specific{
-    font-weight: 600;
-    color: black;
-}
-
 body{
-    h1{
+    .wrapper{
+        margin: 0 85px;
+        position: relative;
+        height: 130vh;
+    }
+    
+    .flex-container{
+        display: flex;
+    }
+    
+    .btn{
+        padding: 10px 15px;
+        background-color: $btn;
+        border: 0;
         font-family: $font;
+        font-weight: 800;
+        font-size: 0.7rem;
+        color: white;
+    }
+    
+    .bold-word{
         font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    #bold-word-specific{
+        font-weight: 600;
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    h1{
+        @include fonts(1.3rem,600);
         font-style: italic;
-        font-size: 1.3rem;
     }
 
     h2{
+        @include fonts(1.3rem,400);
         font-family: $font;
         font-weight: 400;
         font-size: 1.3rem;
     }
+    
+    h3{
+        @include fonts(1.2rem,600);
+    }
 
-    h2{
-        font-family: $font;
-        font-weight: 400;
-        font-size: 1.3rem;
+    h4{
+        @include fonts(0.8rem,400);
+        color: #747474;
     }
 
     p{
-        font-family: $font;
-        font-size: 0.9rem;
+        @include fonts(0.9rem,400)
     }
 }
 

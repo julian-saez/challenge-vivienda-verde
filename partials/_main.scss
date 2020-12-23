@@ -1,5 +1,4 @@
 // Primera sección donde se encuentra tipos de materiales disponibles
-
 #materials-section{
     justify-content: space-between;
 }
@@ -10,7 +9,7 @@
     height: 225px;
 }
 
-section#materials-section article button{
+#materials-section article button{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -22,12 +21,12 @@ section#materials-section article button{
     background: url('assets/banners-14.jpg');
     background-size: 100% 100%;
 }
-
+    
 #option-2{
     background: url('assets/banners-13.jpg');
     background-size: 100% 100%;
 }
-
+    
 #option-3{
     background: url('assets/banners-12.jpg');
     background-size: 100% 100%;
@@ -39,9 +38,7 @@ section#materials-section article button{
     position: relative;
     display: inline-block;
 }
-
-// Banner del margen izquierdo inferior
-
+    // Banner del margen inferior izquierdo 
 #aside {
     margin-top: 60px;
     float: left;
@@ -56,59 +53,133 @@ section#materials-section article button{
     max-height: 300px;
 }
 
-
-// Contenedor donde esta el carrusel con los materiales de construcción en seco
-
 #container-dry-build{
-    vertical-align: top;
-    width: 65vw;
+    position: relative;
+    width: 100%;
+    max-width: 65vw;
     float: right;
     height: auto;
     flex-direction: column;
 }
 
-// Titulo de la sección
-article#container-dry-build h2 {
+// Contenedor de perfiles galvanizados
+
+#container-dry-build h2 {
     text-align: center;
 }
 
-// Titulo con fondo resaltado en amarillo 
 #title-banner{
     width: 500px;
     height: 40px;
     background-color: $yellow;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    @include alignCenter()
 }
 
-// Contenedor donde estan los materiales
+.glider-contain{
+    width: 100%;
+    max-width: 900px;
+    height: 50vh;
+    justify-content: center;
+}
+
+
+// Carrusel con los materiales de construcción en seco
 
 #dry-build-items {
+    position: absolute;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+}
+
+#dry-build-items.flex-container{
     justify-content: space-between;
 }
 
-#dry-build-items div {
+#dry-build-items figure {
     margin-top: 20px;
-    width: 100%;
+    @include adaptative();
     min-width: 200px;
     max-width: 200px;
-    height: auto;
-    padding-left: 25px;
+    max-height: 500px;
 }
 
-#dry-build-items div img {
-    width: 100%;
-    max-width: 185px;
-    height: auto;
+#dry-build-items figure.items:hover {
+    box-shadow: 0px 0px 5px 3px rgba(199,199,199,1);
 }
 
-#dry-build-items div p {
+#dry-build-items figure img {
+    @include adaptative();
+    max-width: 185px;
+    max-height: 185px
+}
+    
+#dry-build-items figure p {
+    @include alignCenter();
     width: 100%;
     max-width: 185px;
-    height: auto;
     text-align: center;
 }
 
+.items{
+    flex-direction: column;
+}
+
+div.prices{
+    @include alignCenter();
+    display: none;
+    width: 100%;
+    max-width: 170px;
+    text-align: center;
+}
+
+span.iva{
+    font-size: 0.7rem;
+}
+
+.items button.btn-add{
+    @include alignCenter();
+    @include buttons();
+    display: none;
+    margin-bottom: 10px;
+    width: 80%;
+    min-width: 50px;
+}
+    
+.items button p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+    
+.items:hover{
+    .amount{
+        display: block;
+    }
+    .btn-add{
+        display: block;
+    }
+    .prices{
+        display: block;
+    }
+}
+    
+.items button.amount {
+    @include alignCenter();
+    position: relative;
+    padding: 12px 18px;
+    display: none;
+    border: 1px solid #d6d6d6;
+    background-color: transparent;
+    box-shadow: 0px 0px 0.5px 1px rgb(221, 221, 221);
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+    
+.items button.amount span{
+    padding-right: 35px;
+}
 

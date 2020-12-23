@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/932757f585.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="partials/glider.min.css">
     <title>E-commerce - Maquetación</title>
 </head>
 <body>
@@ -19,49 +21,128 @@
             <!-- Sección de tipos de materiales a la venta -->
             <section id="materials-section" class="flex-container">
                 <article id="option-1">
-                    <button class="btn-more"> > VER MÁS</button>
+                    <button class="btn"> > VER MÁS</button>
                 </article>
                 <article id="option-2">
-                    <button class="btn-more"> > VER MÁS</button>
+                    <button class="btn"> > VER MÁS</button>
                 </article>
                 <article id="option-3">
-                    <button class="btn-more"> > VER MÁS</button>
+                    <button class="btn"> > VER MÁS</button>
                 </article>
             </section>
 
             <!-- Sección donde esta el banner izquierdo y los tipos de perfiles a la venta -->
             <section id="container">
                 <article id="aside">
-                    <img src="assets/banner-aside.jpg" alt="">
+                    <a href=""><img src="assets/banner-aside.jpg" alt=""></a>
                 </article>
 
                 <article id="container-dry-build" class="flex-container">
                     <div id="title-banner" class="flex-container">
                         <h2>CONSTRUCCIÓN EN SECO <span class="bold-word">HASTA 50% OFF</span></h2>
                     </div>
-                    
-                    <div id="dry-build-items" class="flex-container">
-                        <div>
-                            <img src="assets/producto.jpg" alt="Perfil">
-                            <p>PERFIL DE CONSTRUCCIÓN EN SECO MONTANTE 34 GALVANIZADO 0.52MM X 34MM X 2600MM</p>
-                        </div>
-                        <div>
+                    <div class="glider-contain multiple flex-container">
+                        <button class="glider-prev">
+                            <span class="fas fa-chevron-left"></span>
+                        </button>
+                        <div id="dry-build-items" class="glider">
+                            <figure class="items flex-container">     
+                                    <img src="assets/producto.jpg" alt="Perfil">
+                                    <p>PERFIL DE CONSTRUCCIÓN EN SECO MONTANTE 34 GALVANIZADO 0.52MM X 34MM X 2600MM</p>
+                                    <div class="prices">
+                                        <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                        <h4>$0,00 (IVA included)</h4>
+                                    </div>
+                                    <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                                    <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                            </figure>
+
+                            <figure class="items flex-container">     
+                                <img src="assets/producto.jpg" alt="Perfil">
+                                <p>PERFIL DE CONSTRUCCIÓN EN SECO MONTANTE 69 GALVANIZADO MOLETEADO 0.52MM X 69MM X 2600MM</p>
+                                <div class="prices">
+                                    <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                    <h4>$0,00 (IVA included)</h4>
+                                </div>
+                                <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                                <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                            </figure>
+
+                            <figure class="items flex-container">     
+                                <img src="assets/producto.jpg" alt="Perfil">
+                                <p>PERFIL DE CONSTRUCCIÓN EN SECO MONTANTE 35 GALVANIZADO MOLETEADO 0.35MM X 35MM X 2600MM</p>
+                                <div class="prices">
+                                    <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                    <h4>$0,00 (IVA included)</h4>
+                                </div>
+                                <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                                <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                            </figure>
+
+                            <figure class="items flex-container">     
+                                <img src="assets/producto.jpg" alt="Perfil">
+                                <p>PERFIL CONSTRUCCIÓN SECO SOLERA 70 GALVANIZADO MOLETEADO 0.52MM X 70MM X 2600MM</p>
+                                <div class="prices">
+                                    <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                    <h4>$0,00 (IVA included)</h4>
+                                </div>
+                                <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                                <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                            </figure>
+
+                            <figure class="items flex-container">     
+                                <img src="assets/producto.jpg" alt="Perfil">
+                                <p>PERFIL DE CONSTRUCCIÓN EN SECO MONTANTE 34 GALVANIZADO 0.52MM X 34MM X 2600MM</p>
+                                <div class="prices">
+                                    <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                    <h4>$0,00 (IVA included)</h4>
+                                </div>
+                                <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                                <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                        </figure>
+
+                        <figure class="items flex-container">     
                             <img src="assets/producto.jpg" alt="Perfil">
                             <p>PERFIL DE CONSTRUCCIÓN EN SECO MONTANTE 69 GALVANIZADO MOLETEADO 0.52MM X 69MM X 2600MM</p>
-                        </div>
-                        <div>
+                            <div class="prices">
+                                <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                <h4>$0,00 (IVA included)</h4>
+                            </div>
+                            <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                            <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                        </figure>
+
+                        <figure class="items flex-container">     
                             <img src="assets/producto.jpg" alt="Perfil">
                             <p>PERFIL DE CONSTRUCCIÓN EN SECO MONTANTE 35 GALVANIZADO MOLETEADO 0.35MM X 35MM X 2600MM</p>
-                        </div>
-                        <div>
+                            <div class="prices">
+                                <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                <h4>$0,00 (IVA included)</h4>
+                            </div>
+                            <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                            <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                        </figure>
+
+                        <figure class="items flex-container">     
                             <img src="assets/producto.jpg" alt="Perfil">
                             <p>PERFIL CONSTRUCCIÓN SECO SOLERA 70 GALVANIZADO MOLETEADO 0.52MM X 70MM X 2600MM</p>
+                            <div class="prices">
+                                <h3>$0,00 <span class="iva">+ IVA</span></h3>
+                                <h4>$0,00 (IVA included)</h4>
+                            </div>
+                            <button class="amount"><span>Cant.</span><span class="cantidad-producto">1</span></button>
+                            <button class="btn-add"><p>AGREGAR AL PRESUPUESTO</p></button>                          
+                        </figure>
                         </div>
+                        <button class="glider-next">
+                            <span class="fas fa-angle-right"></span>
+                        </button>
                     </div>
                 </article>
             </section>
         </main>
     </div>
-    <script src="app.js"></script>
+    <script src="glider.min.js"></script>
+    <script src="carrousel.js"></script>
 </body>
 </html>

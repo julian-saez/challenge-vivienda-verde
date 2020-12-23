@@ -1,16 +1,16 @@
-.wrapper {
+body .wrapper {
   margin: 0 85px;
   position: relative;
-  height: 110vh;
+  height: 130vh;
 }
 
-.flex-container {
+body .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.btn-more {
+body .btn {
   padding: 10px 15px;
   background-color: #cf0f24;
   border: 0;
@@ -20,38 +20,54 @@
   color: white;
 }
 
-.bold-word {
+body .bold-word {
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-#bold-word-specific {
+body #bold-word-specific {
   font-weight: 600;
+  color: black;
+}
+
+body a {
+  text-decoration: none;
   color: black;
 }
 
 body h1 {
   font-family: "Encode Sans", sans-serif;
+  font-size: 1.3rem;
   font-weight: 600;
   font-style: italic;
-  font-size: 1.3rem;
 }
 
 body h2 {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
   font-family: "Encode Sans", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
 }
 
-body h2 {
+body h3 {
   font-family: "Encode Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body h4 {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 0.8rem;
   font-weight: 400;
-  font-size: 1.3rem;
+  color: #747474;
 }
 
 body p {
   font-family: "Encode Sans", sans-serif;
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 header {
@@ -78,7 +94,7 @@ header {
   height: 225px;
 }
 
-section#materials-section article button {
+#materials-section article button {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -123,8 +139,9 @@ section#materials-section article button {
 }
 
 #container-dry-build {
-  vertical-align: top;
-  width: 65vw;
+  position: relative;
+  width: 100%;
+  max-width: 65vw;
   float: right;
   height: auto;
   -webkit-box-orient: vertical;
@@ -133,7 +150,7 @@ section#materials-section article button {
           flex-direction: column;
 }
 
-article#container-dry-build h2 {
+#container-dry-build h2 {
   text-align: center;
 }
 
@@ -151,31 +168,123 @@ article#container-dry-build h2 {
   margin-right: auto;
 }
 
+.glider-contain {
+  width: 100%;
+  max-width: 900px;
+  height: 50vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #dry-build-items {
+  position: absolute;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+}
+
+#dry-build-items.flex-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-#dry-build-items div {
+#dry-build-items figure {
   margin-top: 20px;
   width: 100%;
+  height: 100%;
   min-width: 200px;
   max-width: 200px;
-  height: auto;
-  padding-left: 25px;
+  max-height: 500px;
 }
 
-#dry-build-items div img {
-  width: 100%;
-  max-width: 185px;
-  height: auto;
+#dry-build-items figure.items:hover {
+  -webkit-box-shadow: 0px 0px 5px 3px #c7c7c7;
+          box-shadow: 0px 0px 5px 3px #c7c7c7;
 }
 
-#dry-build-items div p {
+#dry-build-items figure img {
+  width: 100%;
+  height: 100%;
+  max-width: 185px;
+  max-height: 185px;
+}
+
+#dry-build-items figure p {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   max-width: 185px;
-  height: auto;
   text-align: center;
+}
+
+.items {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.prices {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  width: 100%;
+  max-width: 170px;
+  text-align: center;
+}
+
+span.iva {
+  font-size: 0.7rem;
+}
+
+.items button.btn-add {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ed3323;
+  border: 0;
+  color: white;
+  display: none;
+  margin-bottom: 10px;
+  width: 80%;
+  min-width: 50px;
+}
+
+.items button p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.items:hover .amount {
+  display: block;
+}
+
+.items:hover .btn-add {
+  display: block;
+}
+
+.items:hover .prices {
+  display: block;
+}
+
+.items button.amount {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 12px 18px;
+  display: none;
+  border: 1px solid #d6d6d6;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0.5px 1px #dddddd;
+          box-shadow: 0px 0px 0.5px 1px #dddddd;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.items button.amount span {
+  padding-right: 35px;
 }
 /*# sourceMappingURL=style.css.map */
